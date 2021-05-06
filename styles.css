@@ -1,0 +1,22 @@
+#board {
+    padding-top: 3em; text-align: center; cursor: pointer;
+}
+.row {clear: both; text-align: center; width: 302px; margin: auto;
+
+}
+.row>div {
+    float: left; height: 100px; width: 100px; 
+}
+.top {
+    border-bottom: 1px black solid;
+}
+.bottom {
+border-top: 1px red solid;
+}
+.left {
+border-right: 1px blue solid;
+}
+.right {
+    border-left: 1px green solid;
+}
+
