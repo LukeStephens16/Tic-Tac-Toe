@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="board">
         <h1>Tic Tac Toe</h1>
-        <div class="row">
-            <div class="top left"></div>
-            <div class="top middle"></div>
-            <div class="top right"></div>
+        <h2 class="message"></h2>
+        <div class="inner-board">
+            <div class="row">
+                <div class="top left"></div>
+                <div class="top middle"></div>
+                <div class="top right"></div>
+            </div>
+            <div class="row">
+                <div class="center left"></div>
+                <div class="center"></div>
+                <div class="center right"></div>
+            </div>
+            <div class="row">
+                <div class="bottom left"></div>
+                <div class="bottom middle"></div>
+                <div class="bottom right"></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="center left"></div>
-            <div class="center"></div>
-            <div class="center right"></div>
+        <br />
+        <div>
+            <div class="winning message" id="winningMessage">
+                <h1 id="data-winning-message-text"></h1>
+            </div>
+            <div style="display: table;"></div>
+            <button id="restartButton">Restart Game</button>
         </div>
-        <div class="row">
-            <div class="bottom left"></div>
-            <div class="bottom middle"></div>
-            <div class="bottom right"></div>
-        </div>
-    </div>
+        <script src="app.js"></script>
 </body>
+
 </html>
